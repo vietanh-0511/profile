@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/47b2d8ad40.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header">
+        <div class="quote">
+          <p>
+            “Don't settle for average. Bring your best to the moment. Then,
+            whether it fails or succeeds, at least you know you gave all you
+            had.”
+          </p>
+          <p>— Angela Bassett</p>
+        </div>
+        <ul class="nav">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div id="about" class="card">
+        <h2>About me</h2>
+        <div class="box-content display-flex">
+          <div class="box left">
+            <p>Full name: Tran Viet Anh</p>
+            <p>Birth date: 05/11/2000</p>
+            <p>
+              Hobby: Listening to music, watching movie, reading books and
+              traveling
+            </p>
+          </div>
+          <div class="box">
+            <p>
+              I'm a student in IT major and a 4nd-yeard student of BKACAD
+              academy. During school time, I got acquainted with different
+              programming languages such as C, Java, Python, PHP along with some
+              framework like Laravel, Django and .Net. Although most of the
+              languages I learnt from school was for server-side programming but
+              I really hope to become a front-end developer one day.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="experiences" class="card">
+        <h2>Experiences</h2>
+        <div class="box-content">
+          <table>
+            <tr>
+              <td><h3>Project 1</h3></td>
+              <td><h3>2019</h3></td>
+              <td><h3>E-commerce website</h3></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <p>
+                  Using HTML, CSS, JavaScript and pure PHP to build an
+                  e-commerce website that sell fruits.
+                </p>
+                <p>Website's function</p>
+                <p>
+                  Customers site: Listing products, Categorize products,
+                  paginaiton, search products, add to cart, upadate cart and
+                  checkout.
+                </p>
+                <p>
+                  Admin site: Listing products, show products, bills detail, add
+                  new, update product or bill information.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td><h3>Project 2</h3></td>
+              <td><h3>2020</h3></td>
+              <td><h3>Online ticket booking for bus</h3></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>
+                <p>
+                  Using Laravel framework to build an online ticket booking website for bus.
+                </p>
+                <p>Website's function</p>
+                <p>
+                  Customers site: Listing buses, search for buses, booking tickets and check booking information.
+                </p>
+                <p>
+                  Admin site: Listing buses, management of buses, bus routes, departure time,..., management of booking deatail detail.                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="contact" class="card">
+        <h2>Contact me</h2>
+        <div class="box-content display-flex">
+          <div class="left box">
+            <span> <i class="fa-solid fa-phone"></i>0344169977 </span><br />
+            <span>
+              <i class="fa-solid fa-envelope"></i>tranvietanh0511@gmail.com
+            </span>
+          </div>
+          <div class="right box">
+            <a href="https://www.facebook.com/tran.vietanh.3532/"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/tran.vietanh.3532/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/VietAnh62428750"><i class="fa-brands fa-twitter-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

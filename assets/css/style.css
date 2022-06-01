@@ -1,0 +1,148 @@
+:root{
+    --height: 10vh;
+    --color:#7fffd4;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    height:auto;
+
+}
+
+#header{
+    width:100%;
+    height:70vh;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+    url('../images/IMG_26431.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+}    
+
+.nav{
+    width: 100%;
+    list-style-type: none;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav li{
+    position: relative;
+    display: inline-block;
+}
+
+.nav li a{
+    line-height:var(--height);
+    text-decoration: none;
+    padding:0 1.5rem;
+    font-size: 1.5rem;
+    color:var(--color);
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.nav li:first-child{
+    padding-left: 3rem;
+}
+
+.nav > li:hover > a{
+    color:#4dd1a5;
+}
+
+.quote{
+    width: 50%;
+    height:auto;
+    margin: auto;
+    color: var(--color);
+}
+
+.quote p:last-child{
+    float: right;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 0 2rem 0
+}
+.card{
+    width: 100%;
+    height: fit-content;
+    padding: 5rem
+}
+
+.align-center{
+    text-align: center
+}
+.display-flex{
+    display: flex;
+}
+
+#about{
+    background: #000;
+    color: var(--color);
+}
+
+#experiences{
+    background: rgba(44, 240, 197, 0.3);
+    color: #000000;
+}
+
+.box-content{
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.box-content table {
+    width: 100%;
+    margin: 2rem
+}
+
+.box-content table td{
+    width: 20%;
+    text-align: center;
+    border-right: 1px solid #000;
+}
+
+.box-content table td:last-child{
+    width: 60%;
+    text-align: unset;
+    padding: 0 2rem;
+    border: none !important;
+}
+
+.box{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 2rem;
+}
+
+.right{
+    text-align: right;
+    font-size:2rem;
+}
+
+.left{
+    border-right: 1px solid #333;
+}
+
+i{
+    margin: 0 .5rem
+}
